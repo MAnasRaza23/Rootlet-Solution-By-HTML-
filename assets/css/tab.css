@@ -1,0 +1,175 @@
+@media (min-width: 768px) and (max-width: 1025px) {
+  /* -------------------- Home Page Style -------------------- */
+  .home-page {
+    .first-section {
+      &::before {
+        background-position: top;
+      }
+
+      .contant {
+        h1 {
+          margin: 0px;
+        }
+        p {
+          width: 55%;
+          margin: 0;
+        }
+        a {
+          font-weight: 500;
+          font-size: 14px;
+        }
+      }
+    }
+    /* .second-section{
+
+        } */
+  }
+
+  /* .home-page {
+        .fint-out-more-btn {
+            margin: 2vh 0vw;
+
+            a {
+                font-size: 14px;
+
+                span {
+                    i {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+
+        .first-section {
+            .svg_bg {
+                .contant {
+                    gap: 5px 0px;
+
+                    h1 {
+                        margin: 0;
+                    }
+
+                    p {
+                        width: 55%;
+                        margin: 0;
+                    }
+
+                    a {
+                        font-weight: 700;
+                        font-size: 16px;
+                        width: 180px;
+                        text-align: center;
+
+                        &:hover {
+                            background-color: var(--primary-yellow-color);
+                            color: #212529;
+                        }
+                    }
+                }
+            }
+
+            &::before {}
+        }
+
+        .second-section {
+            .container {
+                .main-sec {
+                    padding: 8vh 0vw;
+
+                    .left-sec {
+                        .cols {
+                            width: 49%;
+                            height: 100%;
+                            margin: 1vh auto;
+
+                            img {
+                                width: 100%;
+                                height: 150px;
+                            }
+
+                            div {
+                                display: flex;
+                                align-items: center;
+                                gap: 10px;
+                                margin: 1vh;
+
+                                span {
+                                    width: 40px;
+                                    height: 4px;
+                                }
+                            }
+
+                            p {
+                                margin: 1vh;
+                            }
+                        }
+
+                        .second {
+                            div {
+                                justify-content: right;
+                            }
+
+                            p {
+                                text-align: right;
+                            }
+                        }
+                    }
+
+                    .right-sec {
+                        margin: 5vh 0vw;
+                        gap: 0vh;
+
+                        h2 {
+                            text-align: left;
+                        }
+
+                        p {
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+        }
+
+        .third-section {
+            background-color: #fff;
+
+            .container {
+                .main-sec {
+                    .cols {
+                        margin: 2vh auto;
+
+                        span {
+                            margin: 2vh auto;
+
+                            i {
+                                font-size: 40px;
+                            }
+                        }
+
+                        h3 {
+                            margin: 2vh auto 0 auto;
+                            font-size: 16px;
+                        }
+
+                        p {
+                            margin: 0;
+                            font-size: 14px;
+                        }
+
+                        &:hover i {
+                            scale: 1.1;
+                            color: var(--primary-blue-color);
+                        }
+                    }
+                }
+            }
+        }
+
+        .seventh-sec {
+            p {
+                margin: auto;
+            }
+        }
+    } */
+}

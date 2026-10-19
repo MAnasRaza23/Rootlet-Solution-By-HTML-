@@ -1,0 +1,35 @@
+ROOTLET WEBSITE WITH BLOG BACKEND
+
+This ZIP contains the complete merged website, its original assets, and the PHP/MySQL backend.
+
+WHAT IS CONNECTED
+- index.html: latest 3 blogs under The Porto Blog (ordered by post_date, then ID).
+- page/blog.html: all blogs, including image, title, excerpt, author and date.
+- page/blog-detail.html?id=ID: full selected blog plus recent posts.
+- admin/: existing login, dashboard, add/edit/delete and image uploads.
+- api/blogs.php: JSON listing; ?limit=3 for home; ?id=ID for full article.
+
+XAMPP SETUP
+1. Back up your existing website and database.
+2. Extract Rootlet_Solution into C:\xampp\htdocs\ so index.html is directly in that folder.
+3. Start Apache and MySQL.
+4. In includes/config.php, set DB_HOST, DB_NAME, DB_USER and DB_PASS.
+   Defaults: 127.0.0.1 / rootlet_blog / root / empty password.
+5. If rootlet_blog already exists, keep it: database re-import is not required.
+   For a fresh install, import database.sql in phpMyAdmin, then open admin/setup.php to create an admin.
+6. Website: http://localhost/Rootlet_Solution/index.html
+   All blogs: http://localhost/Rootlet_Solution/page/blog.html
+   Admin: http://localhost/Rootlet_Solution/admin/
+7. Log in using your existing credentials. Add a blog, then refresh the website.
+   This package does not reset your existing admin password.
+
+HOSTING
+Upload the contents of Rootlet_Solution to your website root and set database credentials.
+Requires PHP 8.1+ with PDO MySQL, DOM, sessions, image functions; MySQL and writable uploads/.
+Run through Apache/PHP hosting. Double-clicking HTML or using Live Server cannot execute the API.
+HTML pages are retained, with fetch() calls to the same website's PHP API.
+
+CHECKED
+JavaScript syntax; homepage API URL and three-card rendering; listing; full content;
+Read More links; safe title rendering; empty state; missing post and invalid ID behavior.
+PHP/MySQL runtime testing was unavailable in the build environment.

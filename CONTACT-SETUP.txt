@@ -1,0 +1,17 @@
+CONTACT FORM SETUP
+
+1. Extract this updated Rootlet_Solution folder into your XAMPP htdocs folder or PHP hosting. Open through http://localhost/.../Rootlet_Solution/page/contact-us.html (not file://).
+2. Edit includes/contact-mail.php. Get the SMTP host, port, username and mailbox/app password from your email provider. Fill host and password; set username/from to the authorised mailbox if different. Keep recipients unchanged: info@rootletsolutions.com AND hr@rootletsolutions.com.
+3. Usually port 587 uses tls; port 465 uses ssl. Use the exact settings your provider supplies. PHP OpenSSL must be enabled for SMTP. Restart Apache after changing PHP extensions. Do not disable certificate verification.
+4. Defaults intentionally contain no password. Emails cannot be sent until SMTP is configured. XAMPP does not send mail by itself. No database import is required for this contact feature.
+5. Alternatively, on hosting with a working PHP mail service, set transport to mail. A true result means server acceptance, not guaranteed inbox delivery. Check both inboxes and spam folders. Configure SPF/DKIM with your mail provider.
+6. Submit an enquiry. Both addresses receive the same message. Reply-To is the visitor's email. Errors keep the entered fields; details go to the PHP/Apache error log. There is a 30-second delay between submission attempts per session.
+7. Keep SMTP credentials private; do not share or commit the filled config file. Environment variables ROOTLET_SMTP_HOST, ROOTLET_SMTP_PORT, ROOTLET_SMTP_ENCRYPTION, ROOTLET_SMTP_USER, ROOTLET_SMTP_PASSWORD and ROOTLET_MAIL_TRANSPORT can be used instead.
+
+CHANGES
+- Contact fields, POST endpoint, server validation, CSRF token, honeypot, sending feedback, both recipients, mailto links.
+- Fixed admin mobile menu class mismatch through JavaScript and kept editor content synchronised.
+- Admin PHP templates and every existing CSS file are unchanged.
+
+VERIFICATION LIMITS
+PHP/database/admin runtime and real inbox delivery must be verified on your configured server. No live email was sent from the development workspace.

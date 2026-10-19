@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog - Rootlet Solution</title>
+   <link rel="icon" href="../assets/images/favicon.png" />
+
+    <!-- Bootstrap CSS CDN Link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- Coustom CSS Links  -->
+    <link rel="stylesheet" href="../assets/css/global.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <!-- Font  Awesome CDN  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../assets/css/responsive.css" />
+  <link rel="stylesheet" href="../assets/css/blog-integration.css" />
+</head>
+    <body>
+    <!-- Header -->
+   <header class="header">
+      <div class="container">
+        <div class="row main-sec">
+          <div class="logo col-lg-2 col-md-3 col-sm-4 left-sec">
+            <a href="../index.html"
+              ><img
+                src="../assets/images/rootlet-logo.png"
+                alt="Rootlet Solution Logo"
+            /></a>
+          </div>
+          <div class="col-lg-10 col-md-9 col-sm-8 right-sec">
+            <nav id="primary-navigation" aria-label="Main navigation" class="cols">
+              <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li class="dropDown">
+                  <span>
+                    <a href="about-us.html">About Us</a>
+                    <span>
+                      <i class="fa-solid fa-angle-down"></i>
+                    </span>
+                  </span>
+                  <ul class="dropDownOption">
+                    <li><a href="portfolio.html">portfolio </a></li>
+                  </ul>
+                </li>
+                <li class="dropDown">
+                  <span>
+                    <a href="services.html">Services </a>
+                    <span><i class="fa-solid fa-angle-down"></i></span>
+                  </span>
+                  <ul class="dropDownOption">
+                    <li>
+                      <a href="website-development.html"
+                        >website Development</a
+                      >
+                    </li>
+                    <li>
+                      <a href="graphic-designing.html"
+                        >Graphic Designing</a
+                      >
+                    </li>
+                    <li><a href="uiux.html">Uiux Design</a></li>
+                    <li><a href="seo.html">SEO Services</a></li>
+                    <li>
+                      <a href="content-writing.html">Content Writing</a>
+                    </li>
+                    <li>
+                      <a href="video-animation.html">Video Animation</a>
+                    </li>
+                    <li>
+                      <a href="digital-marketing.html"
+                        >Digital Marketing</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="pricing-plan.html">Pricing plan</a></li>
+                <li><a href="career.html">Career</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="faqs.html">Faqs</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+              </ul>
+            </nav>
+            <div class="contact-us">
+              <h6>GET IN TOUCH</h6>
+              <h4>
+                <a href=""><b>+</b>1 424 3820299</a>
+              </h4>
+            </div>
+            <button class="humberger" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-navigation"><span class="menu-lines" aria-hidden="true"></span></button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main  -->
+    <main class="blog-page services-page">
+      <section class="first-section">
+        <div class="main-sec">
+          <h1>Blogs</h1>
+        </div>
+      </section>
+      <section class="container second-section">
+        <div class="row main-sec" id="blog-list" data-endpoint="../api/blogs.php" data-detail-url="blog-detail.html" aria-live="polite" aria-busy="true">
+          <p role="status">Loading blogs…</p>
+        </div>
+      </section>
+      <section class="services-needs container-fluid">
+      <div class="main-sec">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8">
+              <div>
+                <span></span>
+                <h5>Let's Get in Touch</h5>
+              </div>
+              <h1>
+                LET'S TALK ABOUT YOUR BUSINESS IT <br />
+                SERVICES NEEDS
+              </h1>
+              <p>Feel free to reach us out</p>
+            </div>
+            <div class="col-lg-4">
+              <a class="getInTouch" href=""><span>GET IN TOUCH</span>
+                <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    </main>
+
+    <!-- Footer  -->
+    <footer>
+    <div class="main-sec">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 cols">
+            <h3>useful links</h3>
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="about-us.html">About Us</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="pricing-plan.html">Pricing Plan</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="faqs.html">FAQs</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 cols">
+            <h3>OUR SERVICES</h3>
+            <ul>
+              <li>
+                <a href="website-development.html">Website Development</a>
+              </li>
+              <li><a href="graphic-designing.html">Graphic Designing</a></li>
+              <li><a href="seo.html">SEO Services</a></li>
+              <li><a href="uiux.html">UI/UX Design</a></li>
+              <li><a href="content-writing.html">Content Writing</a></li>
+              <li><a href="video-animation.html">Video Animation</a></li>
+              <li><a href="digital-marketing.html">Digital Marketing</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 cols">
+            <h3>About</h3>
+            <ul>
+              <li><a href="about-us.html">About Us</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 cols">
+            <h3>SOCIAL MEDIA</h3>
+            <div class="d-flex">
+              <span><a href=""><i class="fa-brands fa-facebook-f"></i></a></span>
+              <span><a href=""><i class="fa-brands fa-instagram"></i></a></span>
+              <span><a href=""><i class="fa-brands fa-linkedin-in"></i></a></span>
+            </div>
+          </div>
+          <hr />
+          <div class="col-lg-6 cols">
+            <img src="../assets/images/rootlet-white-logo.png" alt="" />
+          </div>
+          <div class="col-lg-6 cols">
+            <h6>Rootlet Solutions. © 2026. All Rights Reserved</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+    <!-- Bootstrap JS CDN Link  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Coustom JS Links  -->
+    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/blog-public.js" defer></script>
+</body>
+</html>

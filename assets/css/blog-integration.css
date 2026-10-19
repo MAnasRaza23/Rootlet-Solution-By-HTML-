@@ -1,0 +1,25 @@
+/* Only the dynamic blog content; existing Rootlet styles remain the source of the design. */
+:is(#blog-list, #home-blog-list) { row-gap: 32px; }
+:is(#blog-list, #home-blog-list) .blogs-col { overflow-wrap: anywhere; }
+:is(#blog-list, #home-blog-list) .blog-featured-image { display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; }
+:is(#blog-list, #home-blog-list) .profile-sec, #blog-detail .profile-sec { display: flex; align-items: center; gap: 12px; margin-top: 20px; }
+.blog-author-avatar { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; flex-shrink: 0; border-radius: 50%; background: #eef2f6; color: #1d2939; font-weight: 700; text-transform: uppercase; }
+:is(#blog-list, #home-blog-list) .profile-sec p, #blog-detail .profile-sec p { margin-bottom: 0; }
+.rootlet-blog-detail { max-width: 960px; margin: 0 auto; padding-top: 32px; padding-bottom: 48px; overflow-wrap: anywhere; }
+.rootlet-blog-detail > .blog-featured-image { display: block; max-width: 100%; width: 100%; height: auto; margin: 28px 0; border-radius: 8px; }
+.rootlet-blog-detail .article-content { line-height: 1.8; margin-bottom: 28px; }
+.rootlet-blog-detail .article-content h2, .rootlet-blog-detail .article-content h3, .rootlet-blog-detail .article-content h4 { margin-top: 28px; }
+.rootlet-blog-detail blockquote { border-left: 3px solid currentColor; padding-left: 20px; }
+.blog-message { padding: 32px 12px; }
+.blog-message button { margin-right: 16px; }
+
+/* Keep the original three-column cards and the existing article/sidebar layout. */
+.rootlet-blog-detail { padding: 0; }
+#blog-detail .rootlet-blog-detail > .blog-featured-image { height: auto; max-height: 600px; object-fit: contain; }
+#blog-detail .profile-sec { margin: 18px 0; }
+#blog-detail .article-content ul, #blog-detail .article-content ol { padding-left: 24px; }
+:is(#blog-list, #home-blog-list) > .blogs-col { display: flex; flex-direction: column; }
+:is(#blog-list, #home-blog-list) .profile-sec { margin-top: auto; padding-top: 16px; }
+@media (max-width: 767.98px) {
+  :is(#blog-list, #home-blog-list) > .blogs-col { width: calc(100% - 24px); }
+}
