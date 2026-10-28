@@ -7,7 +7,7 @@
 
 :root {
   /* --------- Blue Color --------- */
-  --primary-blue-color: #2c479f;
+  --primary-blue-color: #1a4093;
 
   /* --------- Yellow Color --------- */
   --primary-yellow-color: #fbe91b;
@@ -60,7 +60,7 @@ html {
   .admin-row {
     .sidebar-column {
       background-color: var(--primary-blue-color);
-      padding: 1vh 1vw;
+      padding: 2vh 1vw;
       height: 100vh;
       position: relative;
       .brand-logo {
@@ -71,32 +71,46 @@ html {
         }
       }
       .manu {
-        position: absolute;
+        /* position: absolute;
         left: 20px;
         top: 50%;
-        transform: translateY(-50%);
+        transform: translateY(-50%); */
+        margin: 5vh 0;
         width: 85%;
 
         a {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+
           text-decoration: none;
           color: var(--white-color);
           font-family: var(--font-family);
           display: block;
           color: var(--white-color);
-          font-weight: 600;
-          border-radius: 20px;
+          font-weight: 500;
+          font-size: 16px;
+          border-radius: 16px;
           padding: 1vh 1vw;
           margin: 1vh 0;
+          span {
+            margin-right: 10px;
+            font-size: 20px;
+            font-weight: 400;
+            svg {
+              width: 25px;
+            }
+          }
           &:hover {
-            background: var(--white-color);
-            color: var(--primary-blue-color);
+            background: #255ac5;
+            color: var(--white-color);
             transition: all 0.3s ease-in-out;
           }
         }
         a.active {
-          background: var(--white-color);
-          color: var(--primary-blue-color);
-          border-radius: 20px;
+          background: #255ac5;
+          color: var(--white-color);
+          border-radius: 16px;
         }
       }
       .logOut {
@@ -111,9 +125,14 @@ html {
           position: absolute;
           bottom: 20px;
           left: 50%;
-          width: 90%;
+          width: 50%;
           transform: translateX(-50%);
           border: 2px solid red;
+          text-transform: capitalize;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          justify-content: center;
           &:hover {
             background: transparent;
             transition: all 0.3s ease-in-out;
@@ -123,6 +142,8 @@ html {
       }
     }
     .workspace-column {
+      background: #f6f9fe;
+      padding: 0px;
       .workspace {
         flex: 1;
         min-width: 0;
@@ -130,43 +151,74 @@ html {
           display: flex;
           align-items: center;
           justify-content: space-between;
-          border-bottom: 1px solid #e3e8ef;
           padding: 2vh 1vw;
+          box-shadow: 0px 2px 10px 5px #255ac41a;
 
           .menu-toggle {
             display: none;
           }
           .page-name {
+            color: var(--primary-blue-color);
             font-family: var(--font-family);
             font-weight: 600;
             font-size: 20px;
             text-transform: capitalize;
           }
           .admin-name {
-            font-family: var(--font-family);
-            font-weight: 500;
-            font-size: 16px;
-            text-transform: capitalize;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            i {
+              color: var(--primary-blue-color);
+              font-size: 25px;
+            }
+            span {
+              font-family: var(--font-family);
+              font-weight: 500;
+              font-size: 16px;
+              text-transform: capitalize;
+              color: var(--primary-blue-color);
+            }
           }
         }
         .admin-main {
           .page-heading {
             padding: 2vh 0vw;
             .Left-sec {
-              h1 {
-                font-family: var(--font-family);
-                font-weight: 600;
-                font-size: 28px;
-                text-transform: capitalize;
-                margin: 0px;
-              }
-              p {
-                font-family: var(--font-family);
-                font-weight: 500;
-                font-size: 16px;
-                text-transform: capitalize;
-                color: var(--primary-text-color);
-                margin: 0px;
+              display: flex;
+              align-items: center;
+              gap: 10px;
+
+              div {
+                span {
+                  background: #e8f0fd;
+                  width: 50px;
+                  height: 50px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  border-radius: 20px;
+                  svg {
+                    width: 30px;
+                    height: 30px;
+                  }
+                }
+                h2 {
+                  color: var(--primary-blue-color);
+                  font-family: var(--font-family);
+                  font-weight: 600;
+                  font-size: 24px;
+                  text-transform: capitalize;
+                  margin: 0px;
+                }
+                p {
+                  font-family: var(--font-family);
+                  font-weight: 500;
+                  font-size: 16px;
+                  text-transform: capitalize;
+                  color: var(--primary-text-color);
+                  margin: 0px;
+                }
               }
             }
             .right-sec {
@@ -221,12 +273,35 @@ html {
             }
           }
           .panel {
-           h2{
-            font-family: var(--font-family);
-            font-weight: 600;
-            font-size: 20px;
-            text-transform: capitalize;
-           }
+            margin: 1vh 0vw;
+            h2 {
+              font-family: var(--font-family);
+              font-weight: 600;
+              font-size: 20px;
+              text-transform: capitalize;
+            }
+            .recent-list {
+              margin: 1vh 0vw;
+              padding: 0;
+              li {
+                list-style: none;
+                a {
+                  text-decoration: none;
+                  font-family: var(--font-family);
+                  font-weight: 500;
+                  font-size: 16px;
+                  text-transform: capitalize;
+                  color: var(--primary-blue-color);
+                }
+                time {
+                  font-family: var(--font-family);
+                  font-weight: 500;
+                  font-size: 14px;
+                  text-transform: capitalize;
+                  color: var(--primary-text-color);
+                }
+              }
+            }
           }
         }
       }
